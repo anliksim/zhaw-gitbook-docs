@@ -1,0 +1,8 @@
+{
+	"plugins": [],
+	"pdf": {
+		"pageNumbers": true,
+		"fontSize": 11,
+		"fontFamily": "Calibri"
+	}
+}

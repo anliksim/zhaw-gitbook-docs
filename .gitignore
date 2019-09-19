@@ -1,0 +1,5 @@
+.idea/
+.firebase/
+_book/
+node_modules/
+*.pdf
