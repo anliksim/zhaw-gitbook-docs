@@ -11,15 +11,26 @@ ZHAW SoE Modul [XYZ][1]
 
 ## Usage
 
-Init firebase
+### Init firebase
 
+	firebase init hosting
 	firebase target:apply hosting <short-name> <project>
 
-Serve book
+Set `hosting.target` to `<short-name>` in `firebase.json`.
+In firebase, add a website for `<project>`.
 
-	firebase/gitbook serve
+### Serve book
 
-Deploy page to firebase (first replace <short-name> in deploy.sh)
+	gitbook serve
+
+or even
+
+	gitbook build
+	firebase serve
+
+### Deploy page
+
+First replace `<short-name>` in `deploy.sh` with the value specified on init, then run
 
 	./deploy.sh
 
